@@ -1,45 +1,47 @@
-1  <!DOCTYPE html>
-2  <html lang="en">
-3  <head>
-4    <meta charset="UTF-8">
-5    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6    <title>North Star Bakery</title>
-7    <link rel="stylesheet" href="styles.css">
-8    <script src="script.js" defer></script>
-9  </head>
-10 <body>
-11   <header>
-12     <h1>North Star Bakery</h1>
-13     <nav aria-label="Main navigation">
-14       <a href="index.html">Home</a>
-15       <a href="products.html">Products</a>
-16       <a href="about.html">About</a>
-17       <a href="contact.html">Contact</a>
-18     </nav>
-19   </header>
-20
-21   <main>
-22     <h2>Welcome to North Star Bakery</h2>
-23     <p>Fresh bread, sweet treats, and something good to share.</p>
-24
-25     <h2>What We’re Known For</h2>
-26     <ul>
-27       <li>Freshly baked breads</li>
-28       <li>Pastries and sweet treats</li>
-29       <li>Cakes for special occasions</li>
-30     </ul>
-31
-32     <h2>Featured Item of the Week</h2>
-33     <p>Our Signature Loaf is perfect for toast or sandwiches.</p>
-34     <a href="products.html">Explore our products</a>
-35
-36     <h2>Hours and Location</h2>
-37     <p>Sample hours: Tuesday–Sunday, 7 a.m.–3 p.m.</p>
-38     <p>Location: Add your bakery’s sample address here.</p>
-39   </main>
-40
-41   <footer>
-42     <p>North Star Bakery — Student Website Project</p>
-43   </footer>
-44 </body>
-45 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>North Star Bakery</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Bakery Products</h2>
+    <p>Browse our sample menu and save your favorite items.</p>
+    <p>Sample prices only. No online checkout is available.</p>
+
+    <label for="category">Choose a category:</label>
+    <select id="category">
+      <option value="all">All products</option>
+      <option value="bread">Breads</option>
+      <option value="pastry">Pastries</option>
+      <option value="cake">Cakes</option>
+      <option value="favorites">My favorites</option>
+    </select>
+
+    <p id="favorite-count" aria-live="polite"></p>
+    <div id="product-list"></div>
+
+    <p>
+      <a href="contact.html">Ask about a product or pre-order</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>North Star Bakery — Student Website Project</p>
+  </footer>
+</body>
+</html>
