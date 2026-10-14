@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>North Star Bakery</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Bakery Products</h2>
+    <p>Browse the menu and save your favorite items.</p>
+    <p>Sample prices only. No online checkout is available.</p>
+
+    <img src="media/bakery-bread.jpg"
+         alt="A selection of bakery breads">
+
+    <label for="category">Choose a category:</label>
+    <select id="category">
+      <option value="all">All products</option>
+      <option value="bread">Breads</option>
+      <option value="pastry">Pastries</option>
+      <option value="cake">Cakes</option>
+      <option value="favorites">My favorites</option>
+    </select>
+
+    <p id="favorite-count" role="status"></p>
+    <div id="product-list" class="product-grid"></div>
+
+    <noscript>Please enable JavaScript to view the product list.</noscript>
+
+    <p>
+      <a class="button" href="contact.html">
+        Ask about a product or pre-order
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>North Star Bakery — Student Website Project</p>
+  </footer>
+</body>
+</html>
